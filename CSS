@@ -1,0 +1,112 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body with animated gradient background */
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background: linear-gradient(270deg, #ff7eb3, #6a82fb, #00c6ff);
+  background-size: 600% 600%;
+  animation: gradientBG 12s ease infinite;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(0, 0, 0, 0.3);
+}
+header h1 {
+  font-size: 26px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: yellow;
+}
+
+/* Sections */
+.section {
+  padding: 70px 20px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.skills-list li {
+  list-style: none;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+.skills-list li:hover {
+  transform: scale(1.1);
+}
+
+/* Projects */
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.project-card {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  width: 250px;
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.4);
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* Background Animation */
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
