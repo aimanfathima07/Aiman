@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Activity Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Student Activity Tracker</h1>
+<p>Track your daily learning activities</p>
+</header>
+
+<div class="container">
+
+<h2>Your Activities</h2>
+
+<ul id="activityList">
+
+<li>
+<h3>HTML Practice</h3>
+<p>Complete basic HTML exercises</p>
+<button onclick="markComplete(this)">Mark Completed</button>
+<span class="status">Pending</span>
+</li>
+
+<li>
+<h3>CSS Styling</h3>
+<p>Practice designing web pages</p>
+<button onclick="markComplete(this)">Mark Completed</button>
+<span class="status">Pending</span>
+</li>
+
+<li>
+<h3>JavaScript Basics</h3>
+<p>Learn variables and functions</p>
+<button onclick="markComplete(this)">Mark Completed</button>
+<span class="status">Pending</span>
+</li>
+
+<li>
+<h3>Mini Project</h3>
+<p>Create a simple webpage project</p>
+<button onclick="markComplete(this)">Mark Completed</button>
+<span class="status">Pending</span>
+</li>
+
+<li>
+<h3>Debugging Practice</h3>
+<p>Fix errors in sample programs</p>
+<button onclick="markComplete(this)">Mark Completed</button>
+<span class="status">Pending</span>
+</li>
+
+<li>
+<h3>Assignment Submission</h3>
+<p>Submit completed assignment</p>
+<button onclick="markComplete(this)">Mark Completed</button>
+<span class="status">Pending</span>
+</li>
+
+</ul>
+
+<h2 id="progress">Progress: 0 out of 6 activities completed</h2>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
