@@ -1,0 +1,27 @@
+let completedCount = 0;
+let totalActivities = 6;
+
+function markComplete(button){
+
+let status = button.nextElementSibling;
+
+if(status.innerHTML === "Pending")
+{
+status.innerHTML = "Completed";
+status.classList.add("completed");
+
+completedCount++;
+
+updateProgress();
+
+button.disabled = true;
+}
+
+}
+
+function updateProgress(){
+
+document.getElementById("progress").innerHTML =
+"Progress: " + completedCount + " out of " + totalActivities + " activities completed";
+
+}
