@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Heading */
+h1 {
+    text-align: center;
+    color: white;
+    background-color: #6a0dad;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Sub Headings */
+h2 {
+    color: #6a0dad;
+    margin-left: 20px;
+}
+
+/* Event Information List */
+ul {
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+/* Form Design */
+form {
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+/* Fieldset Styling */
+fieldset {
+    border: 2px solid #6a0dad;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Legend Styling */
+legend {
+    font-weight: bold;
+    color: #6a0dad;
+}
+
+/* Input Fields */
+input[type=text],
+input[type=email],
+input[type=date],
+select,
+textarea {
+    width: 95%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Buttons */
+input[type=submit] {
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=reset] {
+    background-color: #999;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button Hover Effect */
+input[type=submit]:hover {
+    background-color: #4b0082;
+}
+
+input[type=reset]:hover {
+    background-color: #666;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #6a0dad;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
